@@ -50,7 +50,7 @@ router.put("/:id", (req, res) => {
 		return res.status(404).json({ message: "User not found" });
 	}
 	users = users.map((u) =>
-		u.id == id ? { name, age, ...user } : u
+		u.id == id ? { ...user, name, age } : u
 	);
 
 	res.status(200).json({

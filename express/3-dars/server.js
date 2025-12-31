@@ -67,7 +67,7 @@ app.put("/users/:id", (req, res) => {
 	}
 
 	users = users.map((u) =>
-		u.id == id ? { name, age, ...user } : u
+		u.id == id ? { ...user, name, age } : u
 	);
 
 	res.status(200).json({

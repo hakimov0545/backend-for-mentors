@@ -50,7 +50,7 @@ router.put("/:id", (req, res) => {
 		return res.status(404).json({ message: "product not found" });
 	}
 	products = products.map((p) =>
-		p.id == id ? { title, price, ...product } : p
+		p.id == id ? { ...product, title, price } : p
 	);
 
 	res.status(200).json({
