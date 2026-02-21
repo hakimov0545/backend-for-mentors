@@ -1,0 +1,17 @@
+{
+	"name": "multer-upload-api",
+	"version": "1.0.0",
+	"description": "Express.js va Multer yordamida rasm yuklash API",
+	"type": "module",
+	"main": "src/server.js",
+	"scripts": {
+		"dev": "nodemon src/server.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.18.2",
+		"multer": "^1.4.5-lts.1",
+		"nodemon": "^3.1.14"
+	}
+}
