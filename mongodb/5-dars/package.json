@@ -1,0 +1,27 @@
+{
+	"name": "mongodb-5-dars",
+	"version": "1.0.0",
+	"description": "MongoDB lesson 5 - Order management system with aggregation",
+	"type": "module",
+	"main": "src/server.js",
+	"scripts": {
+		"start": "node src/server.js",
+		"dev": "nodemon src/server.js"
+	},
+	"keywords": [
+		"mongodb",
+		"express",
+		"order",
+		"aggregation"
+	],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.18.2",
+		"mongoose": "^8.0.0",
+		"dotenv": "^16.3.1"
+	},
+	"devDependencies": {
+		"nodemon": "^3.0.2"
+	}
+}
